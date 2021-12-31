@@ -6,43 +6,53 @@
     <title>ПОДАРОК НА НГ БАТЕТЕ</title>
 </head>
 <body>
-    <div class="first visible">
-        <h1>Привет, пап. <br> C Новым Годом! <br> Кликай на кнопку и забирай <br> свой подарочек :)</h1>
-        <button class="present">Получить подарок</button>
-    </div>
+    <div class="container">
+        <div class="first visible">
+            <h1>Привет, пап. <br> C Новым Годом! <br> Кликай на кнопку и забирай свой подарочек :)</h1>
+            <button class="present">Получить подарок</button>
+        </div>
+        
     
-
-    <div class="second">
-        <span>Вот твой ключ к игре - спроси сына, <br> что с ним делать!</span>
-        <img class="code-img" src="code.png" width="300" alt="">
-        <span class="code">X3ZQ7-YZX20-C8YCF</span>
-        <span class="message">Удачной охоты весной, сталкер!</span>
+        <div class="second">
+            <span>Вот твой ключ к игре - спроси сына, <br> что с ним делать!</span>
+            <img class="code-img" src="code.png" width="250" alt="">
+            <span class="code">X3ZQ7-YZX20-C8YCF</span>
+            <span class="message">Удачной охоты весной, сталкер!</span>
+        </div>
     </div>
-    
 </body>
 <style>
     html {
+        font-family: sans-serif;
+        font-weight: 700;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        box-sizing: border-box;
         background-image: url('bg.png');
         background-size: cover;
-        font-family: sans-serif;
+        background-repeat: no-repeat;
     }
-   body {
-       width: 375px;
+    .container {
+       width: 100%;
+       max-width: 350px;
        margin: 0 auto;
        position: relative;
        padding-top: 50px;
    }
    h1 {
-       font-size: 20px;
+       font-size: 18px;
    }
    .first, .second {
        display: none;
        border-radius: 10px;
        padding: 20px;
-       background-color: rgba(255,255,255, 0.4);
+       background-color: rgba(255,255,255, 0.6);
        width: 90%;
-      box-sizing: border-box;
-      margin: 0 auto;
+    box-sizing: border-box;
+    margin: 0 auto;
    }
    .visible {
        display: flex;
@@ -50,7 +60,7 @@
    }
    .code {
        position: absolute;
-       top: 270px;
+       top: 265px;
        left: 70px; 
    }
    * {
