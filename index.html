@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПОДАРОК НА НГ БАТЕТЕ</title>
+</head>
+<body>
+    <div class="first visible">
+        <h1>Привет, пап. <br> C Новым Годом! <br> Кликай на кнопку и забирай <br> свой подарочек :)</h1>
+        <button class="present">Получить подарок</button>
+    </div>
+    
+
+    <div class="second">
+        <span>Вот твой ключ к игре - спроси сына, <br> что с ним делать!</span>
+        <img class="code-img" src="code.png" width="300" alt="">
+        <span class="code">X3ZQ7-YZX20-C8YCF</span>
+        <span class="message">Удачной охоты весной, сталкер!</span>
+    </div>
+    
+</body>
+<style>
+    html {
+        background-image: url('bg.png');
+        background-size: cover;
+        font-family: sans-serif;
+    }
+   body {
+       width: 375px;
+       margin: 0 auto;
+       position: relative;
+       padding-top: 50px;
+   }
+   h1 {
+       font-size: 20px;
+   }
+   .first, .second {
+       display: none;
+       border-radius: 10px;
+       padding: 20px;
+       background-color: rgba(255,255,255, 0.4);
+       width: 90%;
+      box-sizing: border-box;
+      margin: 0 auto;
+   }
+   .visible {
+       display: flex;
+       flex-direction: column;
+   }
+   .code {
+       position: absolute;
+       top: 270px;
+       left: 70px; 
+   }
+   * {
+       margin-bottom: 30px;
+   }
+   .message {
+        display: block;
+   }
+</style>
+<script src="script.js">
+</script>
+</html>
